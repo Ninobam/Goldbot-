@@ -26,11 +26,11 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ── Config (set these in Railway/Render environment variables) ─────────────
-TELEGRAM_TOKEN  = os.environ["TELEGRAM_TOKEN"]       # Your bot token
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]    # Your chat/user ID
-DERIV_API_TOKEN = os.environ["DERIV_API_TOKEN"]       # Deriv API token
-DERIV_APP_ID    = os.environ.get("DERIV_APP_ID", "1089")  # Deriv app ID
+# ── Config ─────────────────────────────────────────────────────────────────
+TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN",   "8426931743:AAE-vpQPPd_hANAjHaz16yWPaXlGKUdb2gU")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "8693865850")
+DERIV_API_TOKEN  = os.environ.get("DERIV_API_TOKEN",  "pat_3f1658233e95dd43951de48b1c43c85c199bf493f0be447caa6037bf63785498")
+DERIV_APP_ID     = os.environ.get("DERIV_APP_ID",     "1089")
 
 # ── Strategy settings (tweak freely) ──────────────────────────────────────
 SYMBOL          = "frxXAUUSD"   # Gold on Deriv
@@ -338,3 +338,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
